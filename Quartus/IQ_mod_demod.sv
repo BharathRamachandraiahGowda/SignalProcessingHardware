@@ -2,8 +2,13 @@ module IQ_mod_demod(
 input logic clk,input logic reset_n,
 input logic [7:0] freq_tuning_word,
 output logic enable_out,
-output logic [23:0] q_carrier,
-output logic [23:0] q_gen_input
+output logic [23:0] q_I_carrier,
+output logic [23:0] q_Q_carrier,
+output logic [23:0] q_gen_input1,
+output logic [23:0] q_gen_input2,
+output logic [47:0] q_I_mod,
+output logic [47:0] q_Q_mod,
+output logic [48:0] q_y_mod
 );
 
 	logic [10:0] time_base_carrier = 0;
@@ -48,8 +53,13 @@ output logic [23:0] q_gen_input
 		
 	always_ff@(posedge clk)
 		begin
-			q_carrier <= lut_rom[phase_accumulator_carrier];
-			q_gen_input <= lut_rom[phase_accumulator_input];
+			q_I_carrier 	<= lut_rom[phase_accumulator_carrier];
+			q_Q_carrier 	<= 0;
+			q_gen_input1 	<= lut_rom[phase_accumulator_input];
+			q_gen_input2 	<= 0;
+			q_I_mod			<= lut_rom[phase_accumulator_carrier] * lut_rom[phase_accumulator_input];
+			q_Q_mod			<= q_gen_input2 * q_Q_carrier;
+			q_y_mod			<= q_I_mod + q_Q_mod;
 		end
 	endmodule
 			
