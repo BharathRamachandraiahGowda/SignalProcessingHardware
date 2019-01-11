@@ -1,11 +1,11 @@
-Analysis & Synthesis Status : Successful - Fri Jan 11 16:10:39 2019
+Analysis & Synthesis Status : Successful - Fri Jan 11 17:13:14 2019
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : IQ_mod_demod
 Top-level Entity Name : IQ_mod_demod
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 19
-Total pins : 35
+Total registers : 41
+Total pins : 59
 Total virtual pins : 0
 Total block memory bits : 6,144
 Total DSP Blocks : 0

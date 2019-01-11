@@ -18,7 +18,8 @@ module IQ_mod_demod_tb();
 
 	logic tb_local_reset_n = 1'b0;
 	logic [7:0] tb_test_sig = 8'b00000101;
-	logic [23:0] tb_q;
+	logic [23:0] tb_q_carrier;
+	logic [23:0] tb_q_gen_input;
 	logic tb_enable;
 
 //	logic [23:0] test_signal_rom [2**8-1:0];
@@ -43,7 +44,8 @@ module IQ_mod_demod_tb();
 	.reset_n(tb_local_reset_n),
 	.freq_tuning_word(tb_test_sig),
 	.enable_out(tb_enable),
-	.q(tb_q));
+	.q_carrier(tb_q_carrier),
+	.q_gen_input(tb_q_gen_input));
 
 	task reset_filter; begin
 	tb_local_reset_n = 1'b0;
