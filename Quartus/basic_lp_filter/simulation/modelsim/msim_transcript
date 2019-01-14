@@ -1,0 +1,55 @@
+# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# ERROR: No extended dataflow license exists
+# do lp_filter_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+D:/HDA/1_sem/SignalProcessingHardware/Lab/sph_2018_lab_1 {D:/HDA/1_sem/SignalProcessingHardware/Lab/sph_2018_lab_1/lp_filter.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:06:12 on Jan 14,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/HDA/1_sem/SignalProcessingHardware/Lab/sph_2018_lab_1" D:/HDA/1_sem/SignalProcessingHardware/Lab/sph_2018_lab_1/lp_filter.sv 
+# -- Compiling module lp_filter
+# 
+# Top level modules:
+# 	lp_filter
+# End time: 03:06:12 on Jan 14,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+D:/HDA/1_sem/SignalProcessingHardware/Lab/sph_2018_lab_1 {D:/HDA/1_sem/SignalProcessingHardware/Lab/sph_2018_lab_1/lp_filter_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:06:12 on Jan 14,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/HDA/1_sem/SignalProcessingHardware/Lab/sph_2018_lab_1" D:/HDA/1_sem/SignalProcessingHardware/Lab/sph_2018_lab_1/lp_filter_tb.sv 
+# -- Compiling module lp_filter_tb
+# 
+# Top level modules:
+# 	lp_filter_tb
+# End time: 03:06:12 on Jan 14,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  lp_filter_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" lp_filter_tb 
+# Start time: 03:06:12 on Jan 14,2019
+# Loading sv_std.std
+# Loading work.lp_filter_tb
+# Loading work.lp_filter
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Simulation starts ...
+# Simulation done ...
+# ** Note: $stop    : D:/HDA/1_sem/SignalProcessingHardware/Lab/sph_2018_lab_1/lp_filter_tb.sv(40)
+#    Time: 44480 ns  Iteration: 0  Instance: /lp_filter_tb
+# Break in NamedBeginStat reset_generation_process at D:/HDA/1_sem/SignalProcessingHardware/Lab/sph_2018_lab_1/lp_filter_tb.sv line 40
+# End time: 03:06:43 on Jan 14,2019, Elapsed time: 0:00:31
+# Errors: 0, Warnings: 0
