@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lp_filter
-Mon Jan 14 01:47:59 2019
+Mon Jan 14 02:29:29 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -42,7 +42,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Jan 14 01:47:59 2019       ;
+; Analysis & Synthesis Status     ; Successful - Mon Jan 14 02:29:29 2019       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; lp_filter                                   ;
 ; Top-level Entity Name           ; lp_filter                                   ;
@@ -259,12 +259,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Mon Jan 14 01:47:46 2019
+    Info: Processing started: Mon Jan 14 02:29:17 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lp_filter -c lp_filter
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file lp_filter.sv
     Info (12023): Found entity 1: lp_filter File: D:/HDA/1_sem/SignalProcessingHardware/Lab/sph_2018_lab_1/lp_filter.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file lp_filter_tb.sv
+    Info (12023): Found entity 1: lp_filter_tb File: D:/HDA/1_sem/SignalProcessingHardware/Lab/sph_2018_lab_1/lp_filter_tb.sv Line: 9
 Info (12127): Elaborating entity "lp_filter" for the top level hierarchy
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -273,9 +275,9 @@ Info (21057): Implemented 67 device resources after synthesis - the final resour
     Info (21059): Implemented 16 output pins
     Info (21061): Implemented 33 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4831 megabytes
-    Info: Processing ended: Mon Jan 14 01:47:59 2019
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:26
+    Info: Peak virtual memory: 4819 megabytes
+    Info: Processing ended: Mon Jan 14 02:29:29 2019
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:27
 
 
